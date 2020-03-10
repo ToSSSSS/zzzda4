@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'Sen', sans-serif;
+    color: #ff7c7c;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+.title {
+    font-size: 4em;
+    text-transform: uppercase;
+}
+
+#songs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    width: 60%;
+    margin: 100px auto;
+}
+
+img {
+    width: 100%;
+}
+
+.card {
+    position: relative;
+}
+
+.overlayer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #21243d;
+    z-index: 2;
+    opacity: 0;
+    transition: all 0.3s ease-in;
+}
+
+.overlayer:hover {
+    opacity: 0.6;
+}
+
+.song-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.song-artist {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+#lyric {
+    width: 250px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 100px auto;
+}
+
+.lyric-img {
+    width: 350px;
+    height: auto;
+}
+
+#footer {
+    background: #21243d;
+    padding: 15px 40px;
+    text-align: center;
+    color: #ffffff;
+}
